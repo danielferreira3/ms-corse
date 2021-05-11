@@ -17,11 +17,18 @@ public class Role implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String roleName;
+	
+	public Role() {
+		super();
+	}
+
+	
 	public Role(Long id, String roleName) {
 		super();
 		this.id = id;
 		this.roleName = roleName;
 	}
+	
 	public Long getId() {
 		return id;
 	}
