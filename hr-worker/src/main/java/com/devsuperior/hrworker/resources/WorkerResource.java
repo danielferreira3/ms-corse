@@ -32,12 +32,13 @@ public class WorkerResource {
 	@Autowired
 	private WorkerRepository repository;
 	
+	/*
 	@GetMapping(value = "/configs")
 	public ResponseEntity<Void> getConfigs(){
 		logger.info("CONFIG = " + testConfig);
 		return ResponseEntity.noContent().build();
 	}
-	
+	*/
 	@GetMapping
 	public ResponseEntity<List<Worker>> findAll(){
 		List<Worker> list = repository.findAll();
